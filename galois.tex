@@ -1,7 +1,30 @@
 \documentclass{notas}
-
+\title{Teoria de Galois finita}
 \setdefaultlanguage{spanish}%[variant=mexican]
 \begin{document}
-Hola
+
+\maketitle
+
+\chapter{Extensiones de campo y el teorema fundamental.}
+\section{Tipos de extensiones de campo.}
+
+Para comenzar con las nociones principales debemos partir de la noción de extensión de campo.
+
+\begin{tcolorbox}[title=Definición]
+	Sean $E,F$ campos. Decimos que $E$ es extensión de campo de $F$ si $F$ es \textit{subcampo} de $E$, denotado por: $$E/F$$
+\end{tcolorbox}
+
+Podemos pensar las extensiones de campo como \textit{espacios vectoriales}, es decir, si $E/F$ es extensión de campo entonces $E$ es un $F$-espacio vectorial vía la \textbf{acción de multiplicación}.
+En este sentido, podemos hablar de la \textit{dimensión} de este espacio vectorial
+
+\begin{tcolorbox}[title=Grado de una extensión]
+	Sea $E/F$ extensión de campos. Definimos el \underline{grado de la extensión} como:$$[E:F]=\dim_F(E)$$
+\end{tcolorbox}
+
+De la teoría de modulos y que los campos son anillos de división conmutativos, tenemos que el grado de una extensión es \textbf{multiplicativo}:
+
+\begin{tcolorbox}[title=Propiedad multiplicativa del grado]
+	Sea una \textit{torre de campos}: $K\subseteq F\subseteq E$. Entonces: $$[E:K]=[E:F][F:K]$$ 
+\end{tcolorbox}
 
 \end{document}
